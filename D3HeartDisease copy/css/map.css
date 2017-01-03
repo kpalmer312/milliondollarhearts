@@ -1,0 +1,112 @@
+
+
+	path
+	{
+		stroke: white;
+		stroke-width: 1;
+	}
+	
+	path:hover
+	{
+		strokeColor: black;
+		stroke-width: 5; <!--clever way of adding basic mouse interaction -->
+	}
+
+	
+	
+	body { 
+		margin: 0;
+		padding: 0;
+		display: "hh"
+				 "cn"
+				 "ff"
+				 * 200px;
+		width: 100%;
+		font-family: calibri, sans-serif;
+		font-size: 15px;
+		background: url("/img/tile.jpg");
+		background-repeat: repeat;
+		
+	}
+
+	#header {
+		position: h;
+		text-align: center;
+		color: #F8F8F8;
+		font-size: 30px;
+		height: 40px;
+	}
+	
+	#content { 
+		position: c;
+		margin: 0;
+		width: 80%;
+		/*padding: 0 2em;
+		height: 640px;
+		overflow: auto;*/
+	}
+
+	#nav1 { 
+		position: n;
+		margin: 0;
+		padding: .5em;
+		float: right;
+		width: 280px;
+	}
+
+	body::slot(p) {
+		background: #FFF;
+	}
+
+	body::slot(n) {
+		background: #FFF;
+		vertical-align: middle;
+	}
+
+	#nav2, #nav3 { 
+		display: none;
+	}
+
+	#footer { 
+		position: f; 
+		text-align: center;
+		font-weight: bold;
+	}
+
+	#header, #footer {
+		background: #009EDB;
+		
+	}
+
+	#figure p {
+		float: right;
+		width: 150px;
+		height: 200px;
+		margin: .5em;
+		padding: .5em;
+		background: #000;
+		color: white;
+	}
+	
+	#slider {
+		width: 100px;
+		margin: 10px;
+	}
+	
+	.chart div {
+		float: right;
+		font: 10px sans-serif;
+		background-color: #009EDB;
+		text-align: right;
+		padding: 3px;
+		margin: 1px;
+		color: black;
+	}
+	
+	.chart rect {
+		stroke: white;
+		fill: #009EDB;
+		color: black;
+		stroke-width: 1;
+	}
+	
